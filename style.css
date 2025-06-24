@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(251, 251, 251);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(130, 65, 163);
+    color: white;
+    padding: 10px;
+}
+
+#logo h1 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+#logo img {
+    width: 50px;
+    height: 60px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 200px;
+    list-style-type: none;
+    background-color: rgba(130, 65, 163, 0.825);
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+article h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px;
+    color:  rgb(130, 65, 163);
+}
+
+
+article figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 50px auto 40px auto; 
+    max-width: 600px;
+}
+
+
+article figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid rgb(57, 26, 72);
+}
+
+article figure figcaption {
+    font-size: 14px;
+    color: rgb(130, 65, 163);
+    margin-top: 5px;
+    padding-left: 5px;
+    font-style: italic;
+}
+
+article section p {
+    border-top: 1px solid rgb(130, 65, 163);
+    border-bottom: 1px solid rgb(130, 65, 163);
+    padding: 15px 20px;
+     margin-top: 80px;
+    font-size: 26px;
+    color: rgb(130, 65, 163);
+    text-align: justify;      
+    max-width: 800px;         
+    line-height: 1.6;       
+}
+
+aside {
+    margin-top: 90px;
+}      
+
+aside h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 30px;    
+    color:  rgb(130, 65, 163);
+}                                        
+
+aside img {
+    display: block;
+    margin: 0 auto;
+    width: 180px;  
+    height: auto;
+    border-radius: 4px;
+    opacity: 0.85; 
+}
+
+aside p {
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+    color: rgb(130, 65, 163);
+}                    
+
+footer {
+    background-color: rgb(130, 65, 163);
+    font-weight: 200;
+    margin-top: 80px;
+    padding: 20px;
+}                                      
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
