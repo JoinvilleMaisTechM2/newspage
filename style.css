@@ -1,11 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -34,7 +33,7 @@ body{
     height: 60px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,31 +51,37 @@ nav a {
     font-size: 20px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px;
+/* USANDO CSS GRID AQUI 👇 */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
 }
 
-article h2{
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article h2 {
     text-align: center;
     font-size: 35px;
     font-weight: 700;
     margin: 30px;
-    color:  rgb(130, 65, 163);
+    color: rgb(130, 65, 163);
 }
-
 
 article figure {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    margin: 50px auto 40px auto; 
+    align-items: flex-start;
+    margin: 50px auto 40px auto;
     max-width: 600px;
 }
-
 
 article figure img {
     width: 100%;
@@ -98,33 +103,33 @@ article section p {
     border-top: 1px solid rgb(130, 65, 163);
     border-bottom: 1px solid rgb(130, 65, 163);
     padding: 15px 20px;
-     margin-top: 80px;
+    margin-top: 80px;
     font-size: 26px;
     color: rgb(130, 65, 163);
-    text-align: justify;      
-    max-width: 800px;         
-    line-height: 1.6;       
+    text-align: justify;
+    max-width: 800px;
+    line-height: 1.6;
 }
 
 aside {
     margin-top: 90px;
-}      
+}
 
 aside h3 {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    margin: 30px;    
-    color:  rgb(130, 65, 163);
-}                                        
+    margin: 30px;
+    color: rgb(130, 65, 163);
+}
 
 aside img {
     display: block;
     margin: 0 auto;
-    width: 180px;  
+    width: 180px;
     height: auto;
     border-radius: 4px;
-    opacity: 0.85; 
+    opacity: 0.85;
 }
 
 aside p {
@@ -132,18 +137,28 @@ aside p {
     font-size: 18px;
     margin: 30px;
     color: rgb(130, 65, 163);
-}                    
+}
 
 footer {
     background-color: rgb(130, 65, 163);
     font-weight: 200;
     margin-top: 80px;
     padding: 20px;
-}                                      
+}
 
 footer p {
     text-align: center;
     font-size: 14px;
     margin: 10px;
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        margin-top: 40px;
+    }
 }
